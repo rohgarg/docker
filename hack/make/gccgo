@@ -18,6 +18,7 @@ go build -compiler=gccgo \
 		$EXTLDFLAGS_STATIC
 		-Wl,--no-export-dynamic
 		-ldl
+		-lpthread
 	" \
 	./docker
 
